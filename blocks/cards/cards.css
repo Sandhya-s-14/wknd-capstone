@@ -49,6 +49,13 @@
 }
 
 
+/* hide empty category */
+
+.cards .cards-card-body p:first-child:empty {
+  display: none;
+}
+
+
 /* category text */
 
 .cards .cards-card-body p:first-child {
@@ -67,13 +74,6 @@
   font-weight: 600;
   line-height: 1.4;
   color: #222;
-}
-
-
-/* hide empty category */
-
-.cards .cards-card-body p:first-child:empty {
-  display: none;
 }
 
 
@@ -98,6 +98,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* cards container divider */
 
 .cards-container {
   position: relative;
@@ -191,7 +194,6 @@
     grid-template-columns: 1fr;
   }
 }
-
 
 
 /* ----------------------------- */
