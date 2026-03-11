@@ -33,6 +33,16 @@
 
 /* ========================= */
 
+
+/* MAIN LAYOUT */
+
+.columns > div {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  align-items: stretch;
+  min-height: 340px;
+}
+
 .columns.faq > div {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -50,6 +60,14 @@
   display: block;
   margin-bottom: 10px;
 }
+
+
+/* IMAGE COLUMN */
+
+.columns > div > div:first-child {
+  height: 100%;
+}
+
 
 .columns.faq > div > div:first-child p {
   margin-top: 24px;
@@ -101,23 +119,6 @@
 .columns.faq mark,
 .columns.faq span {
   background: none !important;
-}
-
-
-/* MAIN LAYOUT */
-
-.columns > div {
-  display: grid;
-  grid-template-columns: 65% 35%;
-  align-items: stretch;
-  min-height: 340px;
-}
-
-
-/* IMAGE COLUMN */
-
-.columns > div > div:first-child {
-  height: 100%;
 }
 
 .columns > div > div:first-child picture,
