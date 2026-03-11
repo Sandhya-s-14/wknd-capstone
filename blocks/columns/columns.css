@@ -82,10 +82,29 @@
 }
 
 
+/* MOBILE LAYOUT */
+
+@media (width <= 900px) {
+  .columns > div {
+    grid-template-columns: 1fr;
+  }
+
+  .columns > div > div:first-child img {
+    height: 260px;
+  }
+
+  .columns > div > div:last-child {
+    padding: 28px;
+  }
+
+  .columns h2 {
+    font-size: 28px;
+  }
+}
+
+
 /* ========================= */
-
 /* FAQ LAYOUT */
-
 /* ========================= */
 
 .columns.faq > div {
@@ -169,26 +188,5 @@
 
   .columns.faq > div > div:last-child {
     margin-left: 0;
-  }
-}
-
-
-/* MOBILE */
-
-@media (width <= 900px) {
-  .columns > div {
-    grid-template-columns: 1fr;
-  }
-
-  .columns > div > div:first-child img {
-    height: 260px;
-  }
-
-  .columns > div > div:last-child {
-    padding: 28px;
-  }
-
-  .columns h2 {
-    font-size: 28px;
   }
 }
