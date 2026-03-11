@@ -27,6 +27,83 @@
 }
 
 
+/* ========================= */
+
+/* FAQ LAYOUT */
+
+/* ========================= */
+
+.columns.faq > div {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 90px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+
+/* LEFT SIDE */
+
+.columns.faq img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.columns.faq > div > div:first-child p {
+  margin-top: 24px;
+  max-width: 760px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #2c2c2c;
+  text-align: justify;
+}
+
+
+/* RIGHT SIDE */
+
+.columns.faq > div > div:last-child {
+  margin-left: 60px;
+  background: none;
+  padding: 0;
+}
+
+.columns.faq > div > div:last-child h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.columns.faq > div > div:last-child p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+
+/* LINKS */
+
+.columns.faq a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.columns.faq a:hover {
+  text-decoration: underline;
+}
+
+
+/* REMOVE HIGHLIGHT */
+
+.columns.faq mark,
+.columns.faq span {
+  background: none !important;
+}
+
+
 /* MAIN LAYOUT */
 
 .columns > div {
@@ -100,81 +177,6 @@
   .columns h2 {
     font-size: 28px;
   }
-}
-
-
-/* ========================= */
-/* FAQ LAYOUT */
-/* ========================= */
-
-.columns.faq > div {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 90px;
-  align-items: start;
-  margin-top: 40px;
-}
-
-
-/* LEFT SIDE */
-
-.columns.faq img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.columns.faq > div > div:first-child p {
-  margin-top: 24px;
-  max-width: 760px;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #2c2c2c;
-  text-align: justify;
-}
-
-
-/* RIGHT SIDE */
-
-.columns.faq > div > div:last-child {
-  margin-left: 60px;
-  background: none;
-  padding: 0;
-}
-
-.columns.faq > div > div:last-child h3 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #111;
-}
-
-.columns.faq > div > div:last-child p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 12px;
-}
-
-
-/* LINKS */
-
-.columns.faq a {
-  color: #1a73e8;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.columns.faq a:hover {
-  text-decoration: underline;
-}
-
-
-/* REMOVE HIGHLIGHT */
-
-.columns.faq mark,
-.columns.faq span {
-  background: none !important;
 }
 
 
