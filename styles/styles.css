@@ -322,9 +322,7 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
-}
-
-/* -------------------- */
+}/* -------------------- */
 /* INDEX */
 /* -------------------- */
 
@@ -366,7 +364,7 @@ main .section.highlight {
 #next-adventures {
   font-family: Georgia, serif;
   font-size: 38px;
-  font-weight: 400; /* makes it normal, not bold */
+  font-weight: 400;
   margin-bottom: 30px;
   margin-left: 24px;
   position: relative;
@@ -400,6 +398,7 @@ main .section.highlight {
 }
 
 
+
 /* -------------------- */
 /* MAGAZINE */
 /* -------------------- */
@@ -426,13 +425,14 @@ main .section.highlight {
   display: block;
   width: 80px;
   height: 4px;
-  background-color: #ffd100; /* WKND yellow */
+  background-color: #ffd100;
   margin-top: 10px;
 }
 
 #members-only + p {
   margin-left: 25px;
 }
+
 
 
 /* -------------------- */
@@ -452,9 +452,10 @@ main .section.highlight {
   display: block;
   width: 75px;
   height: 2px;
-  background-color: #ffd100; /* WKND yellow */
+  background-color: #ffd100;
   margin-top: 10px;
 }
+
 
 
 /* -------------------- */
@@ -464,7 +465,7 @@ main .section.highlight {
 #adventures {
   font-family: Georgia, serif;
   font-size: 38px;
-  font-weight: 400; /* makes it normal, not bold */
+  font-weight: 400;
   margin-bottom: 30px;
   margin-left: 24px;
   position: relative;
@@ -474,7 +475,7 @@ main .section.highlight {
 #current-adventures {
   font-family: Georgia, serif;
   font-size: 38px;
-  font-weight: 400; /* makes it normal, not bold */
+  font-weight: 400;
   margin-bottom: 30px;
   margin-left: 24px;
   position: relative;
@@ -486,9 +487,10 @@ main .section.highlight {
   display: block;
   width: 100px;
   height: 3px;
-  background-color: #ffd100; /* WKND yellow */
+  background-color: #ffd100;
   margin-top: 10px;
 }
+
 
 
 /* -------------------- */
@@ -507,7 +509,7 @@ main .section.highlight {
 #our-contributors {
   font-family: Georgia, serif;
   font-size: 38px;
-  font-weight: 400; /* makes it normal, not bold */
+  font-weight: 400;
   margin-bottom: 30px;
   margin-left: 23px;
   position: relative;
@@ -519,7 +521,7 @@ main .section.highlight {
   display: block;
   width: 100px;
   height: 3px;
-  background-color: #ffd100; /* WKND yellow */
+  background-color: #ffd100;
   margin-top: 7px;
   margin-left: 6px;
 }
@@ -538,7 +540,7 @@ main .section.highlight {
 #wknd-guides {
   font-family: Georgia, serif;
   font-size: 38px;
-  font-weight: 400; /* makes it normal, not bold */
+  font-weight: 400;
   margin-bottom: 30px;
   margin-left: 23px;
   position: relative;
@@ -550,7 +552,7 @@ main .section.highlight {
   display: block;
   width: 100px;
   height: 3px;
-  background-color: #ffd100; /* WKND yellow */
+  background-color: #ffd100;
   margin-top: 7px;
   margin-left: 6px;
 }

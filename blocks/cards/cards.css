@@ -5,6 +5,7 @@
   padding-right: 24px;
 }
 
+
 /* cards container */
 
 .cards ul {
@@ -15,6 +16,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+
 
 /* each card */
 
@@ -29,6 +31,7 @@
   transform: translateY(-5px);
 }
 
+
 /* image */
 
 .cards .cards-card-image img {
@@ -38,11 +41,13 @@
   display: block;
 }
 
+
 /* card body */
 
 .cards .cards-card-body {
   padding-top: 10px;
 }
+
 
 /* category text */
 
@@ -54,6 +59,7 @@
   letter-spacing: 0.5px;
 }
 
+
 /* title */
 
 .cards .cards-card-body p:last-child {
@@ -63,11 +69,13 @@
   color: #222;
 }
 
+
 /* hide empty category */
 
 .cards .cards-card-body p:first-child:empty {
   display: none;
 }
+
 
 /* links */
 
@@ -75,6 +83,7 @@
   text-decoration: none;
   color: inherit;
 }
+
 
 /* responsive */
 
@@ -106,38 +115,7 @@
   background-color: #858282;
 }
 
-/* ----------------------------- */
-/* MEMBERS ONLY SECTION STYLES */
-/* ----------------------------- */
 
-.section.members .cards > ul > li {
-  position: relative;
-  opacity: 0.5;
-}
-
-/* yellow triangle */
-
-.section.members .cards > ul > li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70px;
-  height: 70px;
-  background: #ffd100;
-  clip-path: polygon(0 0, 100% 0, 0 100%);
-}
-
-/* lock icon */
-
-.section.members .cards > ul > li::after {
-  content: "🔒";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 18px;
-  z-index: 2;
-}
 
 /* ----------------------------- */
 /* ABOUT US */
@@ -161,6 +139,7 @@
   justify-content: center;
 }
 
+
 /* round images */
 
 .cards.about .cards-card-image img {
@@ -170,6 +149,7 @@
   object-fit: cover;
 }
 
+
 /* name */
 
 .cards.about .cards-card-body h3 {
@@ -177,6 +157,7 @@
   font-weight: 700;
   margin-top: 15px;
 }
+
 
 /* role */
 
@@ -186,6 +167,7 @@
   margin-bottom: 15px;
 }
 
+
 /* icon container */
 
 .cards.about .cards-card-body p {
@@ -193,6 +175,7 @@
   justify-content: center;
   gap: 0;
 }
+
 
 /* responsive */
 
@@ -206,4 +189,41 @@
   .cards.about ul {
     grid-template-columns: 1fr;
   }
+}
+
+
+
+/* ----------------------------- */
+/* MEMBERS ONLY SECTION STYLES */
+/* ----------------------------- */
+
+.section.members .cards > ul > li {
+  position: relative;
+  opacity: 0.5;
+}
+
+
+/* yellow triangle */
+
+.section.members .cards > ul > li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background: #ffd100;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+
+/* lock icon */
+
+.section.members .cards > ul > li::after {
+  content: "🔒";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  z-index: 2;
 }

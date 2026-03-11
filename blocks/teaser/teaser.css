@@ -7,45 +7,7 @@ body {
 }
 
 
-/* 2. Top Heading (Next Adventures) with Yellow Line */
-
-h1,
-.next-adventures-title,
-.adventure-teaser-container h2:first-of-type {
-  font-family: serif;
-  font-size: 2rem;
-  margin: 40px 0 10px 20px;
-  position: relative;
-  display: inline-block;
-}
-
-h1::after,
-.next-adventures-title::after,
-.adventure-teaser-container h2:first-of-type::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 4px;
-  background-color: #ffea00;
-  margin-top: 8px;
-}
-
-
-/* 3. Image Styling (Top half cut, bottom focused) */
-
-.adventure-teaser-image img {
-  width: 1500px;
-  height: 450px;
-  object-fit: cover;
-  object-position: bottom;
-  display: block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
-/* 4. White Content Box (Removing the top gap) */
+/* 2. White Content Box */
 
 .adventure-teaser-content {
   position: relative;
@@ -59,7 +21,7 @@ h1::after,
 }
 
 
-/* 5. PERFECT LEFT ALIGNMENT & NO TOP GAP */
+/* PERFECT LEFT ALIGNMENT */
 
 .adventure-teaser-content h2 {
   font-family: serif;
@@ -83,7 +45,7 @@ h1::after,
 }
 
 
-/* 6. Button (Yellow Block) */
+/* Button */
 
 .adventure-teaser-content a {
   display: inline-block;
@@ -98,7 +60,45 @@ h1::after,
 }
 
 
-/* 7. Mobile Adjustments */
+/* 3. Top Heading (Next Adventures) */
+
+h1,
+.next-adventures-title,
+.adventure-teaser-container h2:first-of-type {
+  font-family: serif;
+  font-size: 2rem;
+  margin: 40px 0 10px 20px;
+  position: relative;
+  display: inline-block;
+}
+
+h1::after,
+.next-adventures-title::after,
+.adventure-teaser-container h2:first-of-type::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #ffea00;
+  margin-top: 8px;
+}
+
+
+/* 4. Image Styling */
+
+.adventure-teaser-image img {
+  width: 1500px;
+  height: 450px;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* 5. Mobile Adjustments */
 
 @media (width <= 768px) {
   .adventure-teaser-image img {
