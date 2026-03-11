@@ -322,8 +322,12 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
-}/* -------------------- */
+}
+
+/* -------------------- */
+
 /* INDEX */
+
 /* -------------------- */
 
 #recent-articles {
@@ -397,10 +401,10 @@ main .section.highlight {
   margin-left: 25px !important;
 }
 
-
-
 /* -------------------- */
+
 /* MAGAZINE */
+
 /* -------------------- */
 
 #magazine h2 {
@@ -434,9 +438,10 @@ main .section.highlight {
 }
 
 
-
 /* -------------------- */
+
 /* FAQ PAGE */
+
 /* -------------------- */
 
 #faqs {
@@ -457,9 +462,10 @@ main .section.highlight {
 }
 
 
-
 /* -------------------- */
+
 /* ADVENTURE PAGE */
+
 /* -------------------- */
 
 #adventures {
@@ -492,9 +498,10 @@ main .section.highlight {
 }
 
 
-
 /* -------------------- */
+
 /* ABOUT US */
+
 /* -------------------- */
 
 #about-us {
