@@ -1,0 +1,152 @@
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 600px;
+}
+
+/* IMAGE */
+
+.carousel-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* CONTENT BOX */
+
+.carousel-content {
+  position: relative;
+  width: calc(100% - 90px);
+  margin: 0 auto;
+  background: #fff;
+  padding: 10px 30px 20px;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.carousel-content h2 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  margin: 0 0 10px;
+  font-weight: 500;
+  color: #222;
+}
+
+.carousel-content p a {
+  background-color: var(--brandPrimary, #ffea00);
+  border-radius: var(--buttonBorderRadius, 0);
+  color: var(--textColor, #202020);
+  float: left;
+  font-size: var(--fontSizeSmall, 14px);
+  font-weight: var(--fontWeightBold, 600);
+  padding: 1em 2.5em;
+  text-transform: uppercase;
+}
+
+/* NAVIGATION AREA */
+
+.carousel-nav-wrapper {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DOTS */
+
+.carousel-dots {
+  display: flex;
+  gap: 12px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-dot.active {
+  background: #000;
+  transform: scale(1.2);
+}
+
+/* ARROWS */
+
+.carousel-arrows {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 24px;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 26px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #000;
+  line-height: 1;
+  padding: 0;
+  transition: transform 0.2s;
+}
+
+.carousel-btn:hover {
+  transform: scale(1.1);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    height: 400px;
+  }
+
+  .carousel-content {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .carousel-arrows {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .carousel-nav-wrapper {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+}

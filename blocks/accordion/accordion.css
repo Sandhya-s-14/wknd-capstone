@@ -1,0 +1,49 @@
+/* align accordion with text */
+.accordion-container .accordion-wrapper {
+  max-width: 760px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* remove center alignment */
+.accordion {
+  margin-left: 20px;
+  position: relative;
+}
+
+/* make rows align nicely with text */
+.accordion > div {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* question styling */
+.accordion-header h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.accordion-header {
+position: relative;
+}
+
+.accordion-content p {
+  font-size: 14px;   /* smaller font */
+  color: #555;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+/* plus icon */
+.accordion-header::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 6px;   /* adjust this value */
+  font-size: 20px;
+}
+
+/* minus icon when open */
+.accordion > div.active .accordion-header::after {
+  content: "−";
+}
