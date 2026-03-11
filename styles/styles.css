@@ -324,15 +324,16 @@ main .section.highlight {
   padding: 40px 0;
 }
 
-/*--------------------*/
-/*INDEX*/
-/*--------------------*/
-#recent-articles{
+/* -------------------- */
+/* INDEX */
+/* -------------------- */
+
+#recent-articles {
   font-family: Georgia, serif;
   font-size: 38px;
   font-weight: 400; /* makes it normal, not bold */
   margin-bottom: 30px;
-  margin-left:24px;
+  margin-left: 24px;
   position: relative;
 }
 
@@ -367,7 +368,7 @@ main .section.highlight {
   font-size: 38px;
   font-weight: 400; /* makes it normal, not bold */
   margin-bottom: 30px;
-  margin-left:24px;
+  margin-left: 24px;
   position: relative;
   padding-top: 25px;
 }
@@ -398,15 +399,17 @@ main .section.highlight {
   margin-left: 25px !important;
 }
 
-/*--------------------*/
-/*MAGAZINE*/
-/*--------------------*/
+
+/* -------------------- */
+/* MAGAZINE */
+/* -------------------- */
+
 #magazine h2 {
-  margin-bottom: 20px;   /* reduce space between title and image */
+  margin-bottom: 20px;
 }
 
 #magazine {
-  padding-top: 30px;     /* reduce top spacing */
+  padding-top: 30px;
   padding-left: 25px;
 }
 
@@ -431,9 +434,10 @@ main .section.highlight {
   margin-left: 25px;
 }
 
-/*--------------------*/
-/*FAQ PAGE */
-/*--------------------*/
+
+/* -------------------- */
+/* FAQ PAGE */
+/* -------------------- */
 
 #faqs {
   position: relative;
@@ -452,16 +456,17 @@ main .section.highlight {
   margin-top: 10px;
 }
 
-/*--------------------*/
-/*adventure page*/
-/*--------------------*/
+
+/* -------------------- */
+/* ADVENTURE PAGE */
+/* -------------------- */
 
 #adventures {
   font-family: Georgia, serif;
   font-size: 38px;
   font-weight: 400; /* makes it normal, not bold */
   margin-bottom: 30px;
-  margin-left:24px;
+  margin-left: 24px;
   position: relative;
   padding-top: 15px;
 }
@@ -471,7 +476,7 @@ main .section.highlight {
   font-size: 38px;
   font-weight: 400; /* makes it normal, not bold */
   margin-bottom: 30px;
-  margin-left:24px;
+  margin-left: 24px;
   position: relative;
   padding-top: 15px;
 }
@@ -485,7 +490,11 @@ main .section.highlight {
   margin-top: 10px;
 }
 
-/*ABOUT US */
+
+/* -------------------- */
+/* ABOUT US */
+/* -------------------- */
+
 #about-us {
   font-size: 40px;
   font-weight: 700;
@@ -495,13 +504,12 @@ main .section.highlight {
   margin-left: 20px;
 }
 
-
 #our-contributors {
   font-family: Georgia, serif;
   font-size: 38px;
   font-weight: 400; /* makes it normal, not bold */
   margin-bottom: 30px;
-  margin-left:23px;
+  margin-left: 23px;
   position: relative;
   padding-top: 15px;
 }
@@ -532,12 +540,12 @@ main .section.highlight {
   font-size: 38px;
   font-weight: 400; /* makes it normal, not bold */
   margin-bottom: 30px;
-  margin-left:23px;
+  margin-left: 23px;
   position: relative;
   padding-top: 15px;
 }
 
-#wknd-guides::after{
+#wknd-guides::after {
   content: "";
   display: block;
   width: 100px;
@@ -547,13 +555,13 @@ main .section.highlight {
   margin-left: 6px;
 }
 
-#wknd-guides + p{
-  font-size:12px;
-  font-style:italic;
-  color:#555;
-  line-height:1.8;
-  margin-top:18px;
-  margin-bottom:70px;
-  margin-left:22px;
-  white-space:nowrap;
+#wknd-guides + p {
+  font-size: 12px;
+  font-style: italic;
+  color: #555;
+  line-height: 1.8;
+  margin-top: 18px;
+  margin-bottom: 70px;
+  margin-left: 22px;
+  white-space: nowrap;
 }

@@ -6,6 +6,7 @@
 }
 
 /* cards container */
+
 .cards ul {
   list-style: none;
   padding: 0;
@@ -16,6 +17,7 @@
 }
 
 /* each card */
+
 .cards li {
   background: #fff;
   border-radius: 2px;
@@ -28,6 +30,7 @@
 }
 
 /* image */
+
 .cards .cards-card-image img {
   width: 100%;
   height: 220px;
@@ -36,16 +39,13 @@
 }
 
 /* card body */
+
 .cards .cards-card-body {
   padding-top: 10px;
 }
 
-/* hide empty category box */
-.cards .cards-card-body p:first-child:empty {
-  display: none;
-}
-
 /* category text */
+
 .cards .cards-card-body p:first-child {
   font-size: 12px;
   text-transform: uppercase;
@@ -55,6 +55,7 @@
 }
 
 /* title */
+
 .cards .cards-card-body p:last-child {
   font-size: 16px;
   font-weight: 600;
@@ -62,20 +63,28 @@
   color: #222;
 }
 
-/* link style */
+/* hide empty category */
+
+.cards .cards-card-body p:first-child:empty {
+  display: none;
+}
+
+/* links */
+
 .cards a {
   text-decoration: none;
   color: inherit;
 }
 
 /* responsive */
-@media (max-width: 1024px) {
+
+@media (width <= 1024px) {
   .cards ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .cards ul {
     grid-template-columns: 1fr;
   }
@@ -91,22 +100,23 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 55px;   /* space from left */
-  right: 58px;  /* space from right */
+  left: 55px;
+  right: 58px;
   height: 1px;
   background-color: #858282;
 }
 
 /* ----------------------------- */
 /* MEMBERS ONLY SECTION STYLES */
-/* -----------------------------/
-/* cards layout */
+/* ----------------------------- */
+
 .section.members .cards > ul > li {
   position: relative;
   opacity: 0.5;
 }
 
 /* yellow triangle */
+
 .section.members .cards > ul > li::before {
   content: "";
   position: absolute;
@@ -119,6 +129,7 @@
 }
 
 /* lock icon */
+
 .section.members .cards > ul > li::after {
   content: "🔒";
   position: absolute;
@@ -128,11 +139,10 @@
   z-index: 2;
 }
 
-/*-------------*/
-/*ABOUT US*/
-/*-------------*/
+/* ----------------------------- */
+/* ABOUT US */
+/* ----------------------------- */
 
-/* Cards layout */
 .cards.about ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -142,18 +152,17 @@
   margin-top: 30px;
 }
 
-/* Center card content */
 .cards.about ul li {
   text-align: center;
 }
 
-/* Image wrapper */
 .cards.about .cards-card-image {
   display: flex;
   justify-content: center;
 }
 
-/* Round contributor images */
+/* round images */
+
 .cards.about .cards-card-image img {
   width: 180px;
   height: 180px;
@@ -161,38 +170,40 @@
   object-fit: cover;
 }
 
-/* Name */
+/* name */
+
 .cards.about .cards-card-body h3 {
   font-size: 22px;
   font-weight: 700;
   margin-top: 15px;
 }
 
-/* Role */
+/* role */
+
 .cards.about .cards-card-body h5 {
   font-size: 16px;
   color: #333;
   margin-bottom: 15px;
 }
 
-/* ICON CONTAINER */
+/* icon container */
+
 .cards.about .cards-card-body p {
   display: flex;
   justify-content: center;
-  gap: 0px;
+  gap: 0;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+/* responsive */
+
+@media (width <= 900px) {
   .cards.about ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
   .cards.about ul {
     grid-template-columns: 1fr;
   }
 }
-
-

@@ -4,13 +4,20 @@
   padding: 0 24px;
 }
 
+/* TEXT */
+
+.columns p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 /* MAIN LAYOUT */
 
 .columns > div {
   display: grid;
   grid-template-columns: 65% 35%;
   align-items: stretch;
-  min-height: 340px; /* reduced block height */
+  min-height: 340px;
 }
 
 /* IMAGE COLUMN */
@@ -31,7 +38,7 @@
 
 .columns > div > div:last-child {
   background: #f3f3f3;
-  padding: 35px; /* reduced padding */
+  padding: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,16 +56,9 @@
 
 .columns h2 {
   font-family: Georgia, serif;
-  font-size: 36px; /* slightly reduced */
+  font-size: 36px;
   line-height: 1.2;
   margin-bottom: 16px;
-}
-
-/* TEXT */
-
-.columns p {
-  font-size: 15px;
-  line-height: 1.6;
 }
 
 /* BUTTON */
@@ -76,42 +76,37 @@
 
 /* MOBILE */
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
+  .columns > div {
+    grid-template-columns: 1fr;
+  }
 
-.columns > div {
-  grid-template-columns: 1fr;
+  .columns > div > div:first-child img {
+    height: 260px;
+  }
+
+  .columns > div > div:last-child {
+    padding: 28px;
+  }
+
+  .columns h2 {
+    font-size: 28px;
+  }
 }
 
-.columns > div > div:first-child img {
-  height: 260px;
-}
-
-.columns > div > div:last-child {
-  padding: 28px;
-}
-
-.columns h2 {
-  font-size: 28px;
-}
-
-}
-
-/* =========================
-   FAQ LAYOUT
-========================= */
+/* ========================= */
+/* FAQ LAYOUT */
+/* ========================= */
 
 .columns.faq > div {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 90px; /* space between image and help section */
+  gap: 90px;
   align-items: start;
   margin-top: 40px;
 }
 
-
-/* =========================
-   LEFT SIDE (IMAGE + TEXT)
-========================= */
+/* LEFT SIDE */
 
 .columns.faq img {
   width: 100%;
@@ -119,8 +114,6 @@
   display: block;
   margin-bottom: 10px;
 }
-
-/* Paragraph below image */
 
 .columns.faq > div > div:first-child p {
   margin-top: 24px;
@@ -131,19 +124,13 @@
   text-align: justify;
 }
 
-
-/* =========================
-   RIGHT SIDE (HELP SECTION)
-========================= */
+/* RIGHT SIDE */
 
 .columns.faq > div > div:last-child {
-  margin-left: 60px; /* pushes section to the right */
+  margin-left: 60px;
   background: none;
   padding: 0;
 }
-
-
-/* Heading */
 
 .columns.faq > div > div:last-child h3 {
   font-size: 28px;
@@ -152,17 +139,13 @@
   color: #111;
 }
 
-
-/* Text */
-
 .columns.faq > div > div:last-child p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 12px;
 }
 
-
-/* Links (phone + email) */
+/* LINKS */
 
 .columns.faq a {
   color: #1a73e8;
@@ -174,21 +157,16 @@
   text-decoration: underline;
 }
 
-
-/* Remove any yellow highlight */
+/* REMOVE HIGHLIGHT */
 
 .columns.faq mark,
 .columns.faq span {
   background: none !important;
 }
 
+/* FAQ RESPONSIVE */
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
+@media (width <= 900px) {
   .columns.faq > div {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -197,5 +175,4 @@
   .columns.faq > div > div:last-child {
     margin-left: 0;
   }
-
 }

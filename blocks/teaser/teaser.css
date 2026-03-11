@@ -1,20 +1,27 @@
 /* 1. Reset Body to allow full-width image */
+
 body {
   margin: 0;
   overflow-x: hidden;
   width: 100%;
 }
- 
+
+
 /* 2. Top Heading (Next Adventures) with Yellow Line */
-h1, .next-adventures-title, .adventure-teaser-container h2:first-of-type {
-  font-family:  serif;
-  font-size: 2.0rem;
+
+h1,
+.next-adventures-title,
+.adventure-teaser-container h2:first-of-type {
+  font-family: serif;
+  font-size: 2rem;
   margin: 40px 0 10px 20px;
   position: relative;
   display: inline-block;
 }
- 
-h1::after, .next-adventures-title::after, .adventure-teaser-container h2:first-of-type::after {
+
+h1::after,
+.next-adventures-title::after,
+.adventure-teaser-container h2:first-of-type::after {
   content: "";
   display: block;
   width: 50px;
@@ -22,57 +29,62 @@ h1::after, .next-adventures-title::after, .adventure-teaser-container h2:first-o
   background-color: #ffea00;
   margin-top: 8px;
 }
- 
+
+
 /* 3. Image Styling (Top half cut, bottom focused) */
+
 .adventure-teaser-image img {
   width: 1500px;
   height: 450px;
   object-fit: cover;
-  object-position: bottom; /* Focuses on the climber */
+  object-position: bottom;
   display: block;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
- 
+
+
 /* 4. White Content Box (Removing the top gap) */
+
 .adventure-teaser-content {
   position: relative;
   width: 90%;
   max-width: 1300px;
   margin: -150px auto 0;
   background: #fff;
-  /* Top padding set to 0 to remove gap above heading */
   padding: 20px 30px 30px;
   box-sizing: border-box;
   z-index: 10;
 }
- 
+
+
 /* 5. PERFECT LEFT ALIGNMENT & NO TOP GAP */
+
 .adventure-teaser-content h2 {
   font-family: serif;
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 500;
-  /* Removes default margin that causes the gap */
-  margin: 0 0 15px 0;
-  padding-top: 0px; /* Adjust this to control exact space from box top */
+  margin: 0 0 15px;
+  padding-top: 0;
   border-bottom: none;
 }
- 
-/* Explicitly ensure no yellow line under this header */
+
 .adventure-teaser-content h2::after {
   display: none !important;
   content: none !important;
 }
- 
+
 .adventure-teaser-content p {
   font-size: 1.1rem;
   line-height: 1.6;
-  margin: 0 0 25px 0; /* Align left, space below */
+  margin: 0 0 25px;
   color: #222;
 }
- 
+
+
 /* 6. Button (Yellow Block) */
+
 .adventure-teaser-content a {
   display: inline-block;
   background: #ffea00;
@@ -82,14 +94,17 @@ h1::after, .next-adventures-title::after, .adventure-teaser-container h2:first-o
   font-weight: 700;
   padding: 15px 35px;
   font-size: 0.85rem;
-  margin-left: 0; /* Align perfectly with h2 and p */
+  margin-left: 0;
 }
- 
+
+
 /* 7. Mobile Adjustments */
-@media (max-width: 768px) {
+
+@media (width <= 768px) {
   .adventure-teaser-image img {
     height: 250px;
   }
+
   .adventure-teaser-content {
     width: 95%;
     margin-top: -30px;
@@ -97,30 +112,40 @@ h1::after, .next-adventures-title::after, .adventure-teaser-container h2:first-o
   }
 }
 
-/*-------------*/
-/*ADVENTURE*/
-/*-------------*/
+
+/* ----------------------------- */
+/* ADVENTURE */
+/* ----------------------------- */
+
+
 /* Remove section padding */
+
 .section.image.teaser-container {
   padding-left: 0;
   padding-right: 0;
   max-width: 100%;
 }
 
+
 /* Remove wrapper restriction */
+
 .section.image.teaser-container .teaser-wrapper {
   max-width: 100%;
   padding: 0;
 }
 
+
 /* Make image full width */
+
 .section.image.teaser-container picture,
 .section.image.teaser-container img {
   width: 100%;
   display: block;
 }
 
+
 /* Hero height */
+
 .section.image.teaser-container img {
   height: 500px;
   object-fit: cover;
