@@ -194,14 +194,12 @@ loginModal.innerHTML = `
 
 document.body.appendChild(loginModal);
 
-
 // ================================
 // OPEN LOGIN MODAL
 // ================================
 signBtn.addEventListener('click', () => {
   loginModal.style.display = 'flex';
 });
-
 
 // ================================
 // CLOSE LOGIN MODAL
@@ -216,17 +214,13 @@ window.addEventListener('click', (e) => {
   }
 });
 
-
 // ================================
 // LOGIN BUTTON ACTION
 // ================================
 const loginBtn = loginModal.querySelector('#loginBtn');
-
 loginBtn.addEventListener('click', () => {
-
   const email = document.getElementById('loginEmail').value;
   const password = document.getElementById('loginPassword').value;
-
   if (email.trim() === '' || password.trim() === '') {
     alert('Please enter email and password');
     return;
