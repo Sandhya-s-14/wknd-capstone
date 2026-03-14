@@ -1,0 +1,121 @@
+/* Quote container */
+.quote {
+  background: #efefef;
+  padding: 40px 60px;
+  margin: 10px auto;
+  max-width: 680px;
+  margin-left: 9px;
+}
+
+/* Quote text */
+.quote p:first-child {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  line-height: 1.35;
+  color: #111;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* Yellow underline */
+.quote p:first-child::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffd400;
+  margin-top: 25px;
+}
+
+/* Author */
+.quote p:last-child {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* ================================= */
+/* PHONE (0px – 600px) */
+/* ================================= */
+
+@media (max-width:600px){
+
+  .quote{
+    padding:24px 20px;
+    margin:20px 16px;
+    max-width:100%;
+  }
+
+  .quote p:first-child{
+    font-size:22px;
+    line-height:1.4;
+  }
+
+  .quote p:first-child::after{
+    width:50px;
+    margin-top:18px;
+  }
+
+  .quote p:last-child{
+    font-size:14px;
+  }
+
+}
+
+
+/* ================================= */
+/* TABLET / IPAD (601px – 1024px) */
+/* ================================= */
+
+@media (min-width:601px) and (max-width:1024px){
+
+  .quote{
+    padding:30px 40px;
+    margin:30px auto;
+    max-width:90%;
+  }
+
+  .quote p:first-child{
+    font-size:26px;
+  }
+
+  .quote p:last-child{
+    font-size:15px;
+  }
+
+}
+
+
+/* ================================= */
+/* LAPTOP (1025px – 1440px) */
+/* ================================= */
+
+@media (min-width:1025px) and (max-width:1440px){
+
+  .quote{
+    padding:40px 60px;
+    max-width:680px;
+  }
+
+  .quote p:first-child{
+    font-size:30px;
+  }
+
+}
+
+
+/* ================================= */
+/* LARGE DESKTOP (1441px+) */
+/* ================================= */
+
+@media (min-width:1441px){
+
+  .quote{
+    max-width:760px;
+  }
+
+  .quote p:first-child{
+    font-size:34px;
+  }
+
+}

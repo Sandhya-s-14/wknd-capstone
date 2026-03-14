@@ -1,0 +1,78 @@
+/* subimage section */
+.subimage {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+/* image wrapper */
+.subimage picture {
+  display: block;
+  width: 100%;
+}
+
+/* image */
+.subimage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* ================================= */
+/* PHONE (0px – 600px) */
+/* ================================= */
+
+@media (max-width:600px){
+
+  .subimage{
+    margin:24px auto;
+    padding:0 16px;
+  }
+
+  .subimage img{
+    border-radius:2px;
+  }
+
+}
+
+
+/* ================================= */
+/* TABLET / IPAD (601px – 1024px) */
+/* ================================= */
+
+@media (min-width:601px) and (max-width:1024px){
+
+  .subimage{
+    max-width:95%;
+    margin:30px auto;
+    padding:0 20px;
+  }
+
+}
+
+
+/* ================================= */
+/* LAPTOP (1025px – 1440px) */
+/* ================================= */
+
+@media (min-width:1025px) and (max-width:1440px){
+
+  .subimage{
+    max-width:1100px;
+  }
+
+}
+
+
+/* ================================= */
+/* LARGE DESKTOP (1441px+) */
+/* ================================= */
+
+@media (min-width:1441px){
+
+  .subimage{
+    max-width:1200px;
+  }
+
+}

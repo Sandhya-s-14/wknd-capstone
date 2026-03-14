@@ -1,0 +1,243 @@
+/* Article container */
+.content.block {
+  max-width: 900px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+/* Title */
+.content.block p:first-child {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #222;
+  margin-bottom: 16px;
+
+  white-space: nowrap;      /* keeps title in one line */
+  letter-spacing: 0;        /* remove extra space between words */
+}
+
+/* Author */
+.content.block p:nth-child(2) {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+/* Paragraph text */
+.content.block p {
+  font-size: 18px;
+  line-height: 2.2;        /* increases space between lines */
+  margin-bottom: 28px;
+  color: #333;
+  margin-bottom: 18px;   /* controls paragraph gap */
+  max-width: 720px;
+  text-align: justify;
+}
+
+.content.block p:last-child {
+  font-style: italic;
+  margin-top: 35px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* ---------------content(new)-------------------- */
+/* content width like WKND */
+.content.new.block{
+  max-width: 720px;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+/* reset paragraph styles */
+.content.new.block p{
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* section titles (Black's Beach, La Jolla Shores, etc) */
+.content.new.block p:nth-child(odd){
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+/* paragraph text */
+.content.new.block p:nth-child(even){
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+/* last paragraph italic */
+.content.new.block p:last-child{
+  font-style: italic;
+  text-align: justify;
+}
+
+/* --------content (text)--------- */
+/* Container */
+.content.text.block {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Title */
+.content.text.block p:first-of-type {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+/* Author */
+.content.text.block p:nth-of-type(2) {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Article paragraphs */
+.content.text.block p:not(:first-of-type):not(:nth-of-type(2)) {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 18px;
+  max-width: 720px;
+}
+
+/* ================================= */
+/* PHONE (0px – 600px) */
+/* ================================= */
+
+@media (max-width:600px){
+
+  .content.block{
+    max-width:100%;
+    margin-left:16px;
+    margin-right:16px;
+  }
+
+  .content.block p:first-child{
+    font-size:30px;
+    white-space:normal;
+  }
+
+  .content.block p{
+    font-size:16px;
+    line-height:1.8;
+  }
+
+  .content.new.block{
+    max-width:100%;
+    margin-left:16px;
+    margin-right:16px;
+  }
+
+  .content.new.block p:nth-child(odd){
+    font-size:30px;
+    margin-top:40px;
+  }
+
+  .content.new.block p:nth-child(even){
+    font-size:16px;
+  }
+
+  .content.text.block{
+    padding:0 16px;
+  }
+
+  .content.text.block p:first-of-type{
+    font-size:30px;
+  }
+
+  .content.text.block p:not(:first-of-type):not(:nth-of-type(2)){
+    font-size:16px;
+  }
+
+}
+
+
+/* ================================= */
+/* IPAD / TABLET (601px – 1024px) */
+/* ================================= */
+
+@media (min-width:601px) and (max-width:1024px){
+
+  .content.block{
+    max-width:90%;
+    margin-left:20px;
+  }
+
+  .content.block p:first-child{
+    font-size:38px;
+    white-space:normal;
+  }
+
+  .content.new.block p:nth-child(odd){
+    font-size:36px;
+  }
+
+  .content.text.block p:first-of-type{
+    font-size:38px;
+  }
+
+}
+
+
+/* ================================= */
+/* LAPTOP (1025px – 1440px) */
+/* ================================= */
+
+@media (min-width:1025px) and (max-width:1440px){
+
+  .content.block{
+    max-width:850px;
+  }
+
+  .content.block p:first-child{
+    font-size:44px;
+  }
+
+  .content.new.block p:nth-child(odd){
+    font-size:40px;
+  }
+
+}
+
+
+/* ================================= */
+/* DESKTOP (1441px+) */
+/* ================================= */
+
+@media (min-width:1441px){
+
+  .content.block{
+    max-width:900px;
+  }
+
+  .content.block p:first-child{
+    font-size:48px;
+  }
+
+}

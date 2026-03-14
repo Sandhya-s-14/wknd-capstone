@@ -228,3 +228,229 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* -------------------- */
+/* ADVENTURES TABS CARD */
+/* -------------------- */
+/* -------------------- */
+/* ADVENTURES TABS CARD */
+/* -------------------- */
+
+/* cards wrapper */
+.tabs .cards {
+  max-width: 1280px;
+  margin: 40px auto;   /* centers the grid and adds equal left/right space */
+  padding: 0 40px;     /* page spacing */
+}
+
+/* cards grid */
+.tabs .cards > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* each card */
+.tabs .cards > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+/* image */
+.tabs .cards img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* title */
+.tabs .cards h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 12px 0 6px;
+  letter-spacing: .05em;
+}
+
+/* description */
+.tabs .cards p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+  .tabs .cards > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .tabs .cards {
+    padding: 0 20px;
+  }
+
+  .tabs .cards > ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================= */
+/* RIGHT SIDEBAR CARDS (WKND) */
+/* ============================= */
+
+.cards.sub {
+  width: 320px;
+  margin-left: auto;   /* pushes block to right */
+  margin-top: 40px;
+}
+
+/* Remove default list style */
+
+.cards.sub ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+/* Each card */
+
+.cards.sub ul li{
+  position:relative;
+  padding-left:25px;
+  margin-bottom:45px;
+}
+
+/* Vertical grey line */
+
+.cards.sub ul li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background:#e6e6e6;
+}
+
+/* Title */
+
+.cards.sub ul li h3{
+  font-size:18px;
+  font-weight:500;
+  text-transform:uppercase;
+  margin:0 0 8px 0;
+  color:#222;
+}
+
+/* Date */
+
+.cards.sub ul li p{
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  color:#777;
+  margin:0;
+}
+
+/* ================================= */
+/* MOBILE (0px – 600px) */
+/* ================================= */
+
+@media (max-width: 600px){
+
+  /* main cards */
+  .cards ul{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* about cards */
+  .cards.about ul{
+    grid-template-columns: 1fr;
+  }
+
+  /* tab cards */
+  .tabs .cards > ul{
+    grid-template-columns: 1fr;
+  }
+
+  /* sidebar cards */
+  .cards.sub{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+}
+
+
+/* ================================= */
+/* TABLET / IPAD (601px – 1024px) */
+/* ================================= */
+
+@media (min-width:601px) and (max-width:1024px){
+
+  /* main cards */
+  .cards ul{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /* about cards */
+  .cards.about ul{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /* tab cards */
+  .tabs .cards > ul{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /* sidebar cards */
+  .cards.sub{
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
+
+
+/* ================================= */
+/* LAPTOP (1025px – 1440px) */
+/* ================================= */
+
+@media (min-width:1025px) and (max-width:1440px){
+
+  .cards ul{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .tabs .cards > ul{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+}
+
+
+/* ================================= */
+/* DESKTOP (1441px+) */
+/* ================================= */
+
+@media (min-width:1441px){
+
+  .cards ul{
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .tabs .cards > ul{
+    grid-template-columns: repeat(4,1fr);
+  }
+
+}

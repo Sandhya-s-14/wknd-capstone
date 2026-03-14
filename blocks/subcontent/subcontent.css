@@ -1,0 +1,236 @@
+/* Magazine Article Styling */
+
+.subcontent {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  color: #222;
+  margin-left: 10px;
+}
+
+/* Title */
+.subcontent h1,
+.subcontent h2 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+/* Author */
+.subcontent p:first-of-type {
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #333;
+  text-wrap: nowrap;
+}
+
+/* Paragraphs */
+.subcontent p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 2.2;
+  text-align: justify;
+}
+
+/* Emphasis (like Back to the Future) */
+.subcontent em {
+  font-style: italic;
+}
+
+/* ----------subcontent-one--------------- */
+/* Subcontent block styling like WKND article */
+.subcontent.one {
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: "Times New Roman", Georgia, serif;
+  color: #222;
+  margin-left: 18px;
+}
+
+/* Heading */
+.subcontent.one h2,
+.subcontent.one h3,
+.subcontent.one p:first-child {
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Yellow underline below heading */
+.subcontent.one h2::after,
+.subcontent.one h3::after,
+.subcontent.one p:first-child::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffd100;
+  margin-top: 10px;
+}
+
+/* Paragraph text */
+.subcontent.one p {
+  font-size: 22px;
+  line-height: 2.2;
+  color: #444;
+  margin-bottom: 16px;
+}
+/*-------------subcontent (two)-------------*/
+/* Subcontent Two - Article paragraph style */
+.subcontent.two {
+  max-width: 720px;
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.subcontent.two p {
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #333;
+  margin: 0;
+  text-transform: none;
+  white-space: normal;   /* allows normal wrapping */
+}
+
+/* ================================= */
+/* PHONE (0px – 600px) */
+/* ================================= */
+
+@media (max-width:600px){
+
+  .subcontent{
+    padding:24px 16px;
+    max-width:100%;
+    margin-left:0;
+  }
+
+  .subcontent h1,
+  .subcontent h2{
+    font-size:36px;
+    line-height:1.2;
+  }
+
+  .subcontent p:first-of-type{
+    font-size:18px;
+    text-wrap:wrap;
+  }
+
+  .subcontent p{
+    font-size:16px;
+    line-height:1.8;
+  }
+
+  /* subcontent.one */
+
+  .subcontent.one{
+    margin-left:0;
+  }
+
+  .subcontent.one h2,
+  .subcontent.one h3,
+  .subcontent.one p:first-child{
+    font-size:24px;
+  }
+
+  .subcontent.one p{
+    font-size:16px;
+    line-height:1.9;
+  }
+
+  /* subcontent.two */
+
+  .subcontent.two{
+    margin-left:0;
+  }
+
+  .subcontent.two p{
+    font-size:16px;
+    line-height:1.8;
+  }
+
+}
+
+
+/* ================================= */
+/* TABLET / IPAD (601px – 1024px) */
+/* ================================= */
+
+@media (min-width:601px) and (max-width:1024px){
+
+  .subcontent{
+    max-width:90%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .subcontent h1,
+  .subcontent h2{
+    font-size:52px;
+  }
+
+  .subcontent p:first-of-type{
+    font-size:24px;
+  }
+
+  .subcontent p{
+    font-size:17px;
+  }
+
+  .subcontent.one h2,
+  .subcontent.one h3,
+  .subcontent.one p:first-child{
+    font-size:28px;
+  }
+
+  .subcontent.one p{
+    font-size:18px;
+  }
+
+  .subcontent.two p{
+    font-size:17px;
+  }
+
+}
+
+
+/* ================================= */
+/* LAPTOP (1025px – 1440px) */
+/* ================================= */
+
+@media (min-width:1025px) and (max-width:1440px){
+
+  .subcontent h1,
+  .subcontent h2{
+    font-size:70px;
+  }
+
+  .subcontent p:first-of-type{
+    font-size:30px;
+  }
+
+}
+
+
+/* ================================= */
+/* LARGE DESKTOP (1441px+) */
+/* ================================= */
+
+@media (min-width:1441px){
+
+  .subcontent{
+    max-width:760px;
+  }
+
+}

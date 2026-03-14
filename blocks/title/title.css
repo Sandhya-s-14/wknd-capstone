@@ -1,0 +1,83 @@
+/* Title block container */
+.title.block {
+  margin: 40px 0 20px;
+  margin-left: 40px;
+}
+
+/* Title text */
+.title.block p {
+  font-size: 42px;
+  font-family: serif;
+  font-weight: 400;
+  color: #111;
+  margin: 0;
+}
+
+/* Yellow underline like WKND */
+.title.block p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1.5px;
+  background: #ffcc00;
+  margin-top: 10px;
+}
+
+/* ================================= */
+/* TABLET / IPAD (≤1024px) */
+/* ================================= */
+
+@media (max-width:1024px){
+
+  .title.block{
+    margin-left:30px;
+  }
+
+  .title.block p{
+    font-size:34px;
+  }
+
+}
+
+
+/* ================================= */
+/* MOBILE (≤768px) */
+/* ================================= */
+
+@media (max-width:768px){
+
+  .title.block{
+    margin-left:20px;
+    margin-top:30px;
+  }
+
+  .title.block p{
+    font-size:28px;
+  }
+
+  .title.block p::after{
+    width:50px;
+  }
+
+}
+
+
+/* ================================= */
+/* SMALL MOBILE (≤480px) */
+/* ================================= */
+
+@media (max-width:480px){
+
+  .title.block{
+    margin-left:16px;
+  }
+
+  .title.block p{
+    font-size:22px;
+  }
+
+  .title.block p::after{
+    width:40px;
+  }
+
+}

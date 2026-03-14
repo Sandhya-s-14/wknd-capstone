@@ -1,154 +1,312 @@
-/* 1. Reset Body to allow full-width image */
+/* =============================== */
+/* GLOBAL RESET */
+/* =============================== */
 
-body {
-  margin: 0;
-  overflow-x: hidden;
-  width: 100%;
+body{
+  margin:0;
+  overflow-x:hidden;
 }
 
+/* Make Franklin images responsive */
 
-/* 2. White Content Box */
-
-.adventure-teaser-content {
-  position: relative;
-  width: 90%;
-  max-width: 1300px;
-  margin: -150px auto 0;
-  background: #fff;
-  padding: 20px 30px 30px;
-  box-sizing: border-box;
-  z-index: 10;
+picture{
+  width:100%;
+  display:block;
 }
 
-
-/* PERFECT LEFT ALIGNMENT */
-
-.adventure-teaser-content h2 {
-  font-family: serif;
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 0 0 15px;
-  padding-top: 0;
-  border-bottom: none;
+picture img{
+  width:100%;
+  height:auto;
+  display:block;
 }
 
-.adventure-teaser-content h2::after {
-  display: none !important;
-  content: none !important;
+/* =============================== */
+/* HERO IMAGE */
+/* =============================== */
+
+.adventure-teaser-image picture,
+.adventure-teaser-image img{
+  width:100%;
 }
 
-.adventure-teaser-content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0 0 25px;
-  color: #222;
+.adventure-teaser-image img{
+  height:450px;
+  object-fit:cover;
+  object-position:bottom;
 }
 
+/* =============================== */
+/* WHITE CONTENT OVERLAY */
+/* =============================== */
 
-/* Button */
-
-.adventure-teaser-content a {
-  display: inline-block;
-  background: #ffea00;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  padding: 15px 35px;
-  font-size: 0.85rem;
-  margin-left: 0;
+.adventure-teaser-content{
+  position:relative;
+  width:90%;
+  max-width:1200px;
+  margin:-120px auto 0;
+  background:#fff;
+  padding:25px 30px;
+  box-sizing:border-box;
+  z-index:10;
 }
 
+.adventure-teaser-content h2{
+  font-family:serif;
+  font-size:2rem;
+  margin-bottom:15px;
+}
 
-/* 3. Top Heading (Next Adventures) */
+.adventure-teaser-content p{
+  font-size:1.1rem;
+  line-height:1.6;
+  margin-bottom:25px;
+}
+
+.adventure-teaser-content a{
+  display:inline-block;
+  background:#ffea00;
+  color:#000;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-weight:700;
+  padding:14px 32px;
+  font-size:0.85rem;
+}
+
+/* =============================== */
+/* SECTION TITLE */
+/* =============================== */
 
 h1,
-.next-adventures-title,
-.adventure-teaser-container h2:first-of-type {
-  font-family: serif;
-  font-size: 2rem;
-  margin: 40px 0 10px 20px;
-  position: relative;
-  display: inline-block;
+.next-adventures-title{
+  font-family:serif;
+  font-size:2rem;
+  margin:40px 0 10px 20px;
 }
 
 h1::after,
-.next-adventures-title::after,
-.adventure-teaser-container h2:first-of-type::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 4px;
-  background-color: #ffea00;
-  margin-top: 8px;
+.next-adventures-title::after{
+  content:"";
+  display:block;
+  width:50px;
+  height:4px;
+  background:#ffd100;
+  margin-top:8px;
 }
 
+/* =============================== */
+/* TEASER ONE */
+/* =============================== */
 
-/* 4. Image Styling */
-
-.adventure-teaser-image img {
-  width: 1500px;
-  height: 450px;
-  object-fit: cover;
-  object-position: bottom;
-  display: block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+.teaser.one.block > div > div{
+  padding-left:20px;
 }
 
-
-/* 5. Mobile Adjustments */
-
-@media (width <= 768px) {
-  .adventure-teaser-image img {
-    height: 250px;
-  }
-
-  .adventure-teaser-content {
-    width: 95%;
-    margin-top: -30px;
-    padding: 0 20px 30px;
-  }
+.teaser.one.block p:first-child{
+  font-size:42px;
+  font-family:Georgia,serif;
 }
 
-
-/* ----------------------------- */
-
-/* ADVENTURE */
-
-/* ----------------------------- */
-
-
-/* Remove section padding */
-
-.section.image.teaser-container {
-  padding-left: 0;
-  padding-right: 0;
-  max-width: 100%;
+.teaser.one.block p:first-child::after{
+  content:"";
+  display:block;
+  width:120px;
+  height:4px;
+  background:#ffd100;
+  margin-top:12px;
 }
 
-
-/* Remove wrapper restriction */
-
-.section.image.teaser-container .teaser-wrapper {
-  max-width: 100%;
-  padding: 0;
+.teaser.one.block picture{
+  max-width:750px;
 }
 
-
-/* Make image full width */
-
-.section.image.teaser-container picture,
-.section.image.teaser-container img {
-  width: 100%;
-  display: block;
+.teaser.one.block p:last-child{
+  max-width:740px;
+  font-size:18px;
+  line-height:2.1;
+  text-align:justify;
 }
 
+/* =============================== */
+/* TEASER TWO */
+/* =============================== */
 
-/* Hero height */
+.teaser.two.block > div > div{
+  padding-left:20px;
+  display:flex;
+  flex-direction:column;
+}
 
-.section.image.teaser-container img {
-  height: 500px;
-  object-fit: cover;
+.teaser.two.block p:first-of-type{
+  font-family:Georgia,serif;
+  font-size:40px;
+}
+
+.teaser.two.block p:first-of-type::after{
+  content:"";
+  display:block;
+  width:120px;
+  height:4px;
+  background:#ffd100;
+  margin-top:10px;
+}
+
+.teaser.two.block picture{
+  max-width:780px;
+  margin:25px 0;
+}
+
+.teaser.two.block p:last-of-type{
+  max-width:740px;
+  font-size:18px;
+  line-height:2.1;
+  text-align:justify;
+}
+
+/* =============================== */
+/* TEASER THREE */
+/* =============================== */
+
+.teaser.three.block > div > div{
+  padding-left:20px;
+}
+
+.teaser.three.block p:nth-of-type(1){
+  font-family:Georgia,serif;
+  font-size:42px;
+}
+
+.teaser.three.block p:nth-of-type(1)::after{
+  content:"";
+  display:block;
+  width:70px;
+  height:4px;
+  background:#ffd100;
+  margin-top:12px;
+}
+
+.teaser.three.block picture{
+  max-width:780px;
+  margin:25px 0;
+}
+
+.teaser.three.block p:nth-of-type(2),
+.teaser.three.block p:nth-of-type(3){
+  max-width:740px;
+  font-size:18px;
+  line-height:2.1;
+  text-align:justify;
+}
+
+/* =============================== */
+/* TEASER FOUR */
+/* =============================== */
+
+.teaser.four{
+  max-width:760px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+.teaser.four p{
+  font-size:18px;
+  line-height:2.1;
+  text-align:justify;
+}
+
+.teaser.four picture{
+  margin:30px auto;
+}
+
+/* =============================== */
+/* TABLET */
+/* =============================== */
+
+@media (max-width:1024px){
+
+.adventure-teaser-image img{
+  height:350px;
+}
+
+.adventure-teaser-content{
+  margin-top:-90px;
+}
+
+.teaser.one.block p:first-child,
+.teaser.two.block p:first-of-type,
+.teaser.three.block p:nth-of-type(1){
+  font-size:34px;
+}
+
+}
+
+/* =============================== */
+/* MOBILE */
+/* =============================== */
+
+@media (max-width:768px){
+
+.adventure-teaser-image img{
+  height:240px;
+}
+
+.adventure-teaser-content{
+  width:94%;
+  margin-top:-40px;
+  padding:18px;
+}
+
+.adventure-teaser-content h2{
+  font-size:1.5rem;
+}
+
+.adventure-teaser-content p{
+  font-size:1rem;
+}
+
+h1,
+.next-adventures-title{
+  font-size:1.6rem;
+}
+
+.teaser.one.block p:first-child,
+.teaser.two.block p:first-of-type,
+.teaser.three.block p:nth-of-type(1){
+  font-size:28px;
+}
+
+.teaser.one.block p:last-child,
+.teaser.two.block p:last-of-type,
+.teaser.three.block p:nth-of-type(2),
+.teaser.three.block p:nth-of-type(3),
+.teaser.four p{
+  font-size:16px;
+  line-height:1.8;
+}
+
+.teaser.one.block > div > div,
+.teaser.two.block > div > div,
+.teaser.three.block > div > div{
+  padding-left:0;
+}
+
+}
+
+/* =============================== */
+/* SMALL MOBILE */
+/* =============================== */
+
+@media (max-width:480px){
+
+.teaser.one.block p:first-child,
+.teaser.two.block p:first-of-type,
+.teaser.three.block p:nth-of-type(1){
+  font-size:24px;
+}
+
+.adventure-teaser-content a{
+  padding:12px 24px;
+  font-size:0.75rem;
+}
+
 }

@@ -192,3 +192,207 @@
     margin-left: 0;
   }
 }
+
+/* ============================================================ */
+/* AUTHOR VARIATION: Final Precise Text & Social Alignment      */
+/* ============================================================ */
+ 
+.columns.author {
+  max-width: 750px; /* Matches the paragraph width from your screenshots */
+  margin: 40px;
+  padding: 20px 0 !important;
+  border-top: 1px solid #f2f2f2;
+}
+ 
+.columns.author > div {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important; /* Pushes social box to far right */
+  min-height: auto !important;
+  gap: 20px;
+}
+ 
+/* 1. LEFT COLUMN: Image */
+.columns.author > div > div:nth-child(1) {
+  flex: 0 0 auto;
+}
+ 
+.columns.author > div > div:nth-child(1) img {
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50% !important;
+  object-fit: cover;
+  display: block;
+}
+ 
+/* 2. MIDDLE COLUMN: Name and Role (Stacked) */
+.columns.author > div > div:nth-child(2) {
+  flex: 1 1 auto; /* Allows this to take up available space */
+  display: flex !important;
+  flex-direction: column !important; /* Forces Role below Name */
+  justify-content: center;
+  align-items: flex-start;
+}
+ 
+.columns.author > div > div:nth-child(2) h2 {
+  font-family: var(--fontFamilySerif, "Georgia", serif);
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 4px 0 !important; /* Small gap between name and role */
+  line-height: 1.2;
+}
+ 
+.columns.author > div > div:nth-child(2) p {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 !important;
+  letter-spacing: 0.5px;
+}
+ 
+/* 3. RIGHT COLUMN: Social Box */
+.columns.author > div > div:nth-child(3) {
+  flex: 0 0 auto;
+  display: flex !important;
+  flex-direction: row !important;
+  background-color: #1a1a1a !important;
+  padding: 12px 25px !important;
+  gap: 15px !important;
+  align-items: center !important;
+  margin-left: auto; /* Safety push to the right */
+}
+ 
+/* Icon White Filter Fix */
+.columns.author > div > div:nth-child(3) a,
+.columns.author > div > div:nth-child(3) img {
+  filter: invert(1) brightness(2) !important;
+  width: 18px !important;
+  height: 18px !important;
+  display: flex;
+}
+ 
+.columns.author > div > div:nth-child(3) p {
+  display: flex !important;
+  gap: 15px;
+  margin: 0 !important;
+}
+ 
+/* MOBILE */
+@media (max-width: 768px) {
+  .columns.author > div {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 15px;
+  }
+  .columns.author > div > div:nth-child(2) {
+    align-items: center; /* Centers text on mobile */
+  }
+}
+
+/* ================================= */
+/* PHONE (0px – 600px) */
+/* ================================= */
+
+@media (max-width:600px){
+
+  .columns{
+    margin:30px auto;
+    padding:0 16px;
+  }
+
+  .columns > div{
+    grid-template-columns:1fr;
+  }
+
+  .columns > div > div:first-child img{
+    height:220px;
+  }
+
+  .columns h2{
+    font-size:24px;
+  }
+
+  .columns p{
+    font-size:14px;
+  }
+
+  .columns.faq > div{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .columns.faq > div > div:last-child{
+    margin-left:0;
+  }
+
+}
+
+
+/* ================================= */
+/* IPAD / TABLET (601px – 1024px) */
+/* ================================= */
+
+@media (min-width:601px) and (max-width:1024px){
+
+  .columns{
+    padding:0 20px;
+  }
+
+  .columns > div{
+    grid-template-columns:1fr;
+  }
+
+  .columns h2{
+    font-size:30px;
+  }
+
+  .columns.faq > div{
+    grid-template-columns:1fr;
+    gap:50px;
+  }
+
+  .columns.faq > div > div:last-child{
+    margin-left:0;
+  }
+
+}
+
+
+/* ================================= */
+/* LAPTOP (1025px – 1440px) */
+/* ================================= */
+
+@media (min-width:1025px) and (max-width:1440px){
+
+  .columns > div{
+    grid-template-columns:60% 40%;
+  }
+
+  .columns h2{
+    font-size:34px;
+  }
+
+}
+
+
+/* ================================= */
+/* DESKTOP (1441px+) */
+/* ================================= */
+
+@media (min-width:1441px){
+
+  .columns{
+    max-width:1400px;
+  }
+
+  .columns > div{
+    grid-template-columns:65% 35%;
+  }
+
+  .columns h2{
+    font-size:38px;
+  }
+
+}

@@ -169,3 +169,76 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 }
+// ================================
+// SIGN IN BUTTON + LOGIN MODAL
+// ================================
+
+const signBtn = document.createElement('div');
+signBtn.className = 'signin-btn';
+signBtn.textContent = 'SIGN IN';
+
+document.body.appendChild(signBtn);
+
+const loginModal = document.createElement('div');
+loginModal.id = 'loginModal';
+
+loginModal.innerHTML = `
+<div class="login-box">
+  <span class="close-login">&times;</span>
+  <h2>Sign In</h2>
+  <input type="text" id="loginEmail" placeholder="Email">
+  <input type="password" id="loginPassword" placeholder="Password">
+  <button id="loginBtn">Login</button>
+</div>
+`;
+
+document.body.appendChild(loginModal);
+
+
+// ================================
+// OPEN LOGIN MODAL
+// ================================
+signBtn.addEventListener('click', () => {
+  loginModal.style.display = 'flex';
+});
+
+
+// ================================
+// CLOSE LOGIN MODAL
+// ================================
+loginModal.querySelector('.close-login').addEventListener('click', () => {
+  loginModal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === loginModal) {
+    loginModal.style.display = 'none';
+  }
+});
+
+
+// ================================
+// LOGIN BUTTON ACTION
+// ================================
+const loginBtn = loginModal.querySelector('#loginBtn');
+
+loginBtn.addEventListener('click', () => {
+
+  const email = document.getElementById('loginEmail').value;
+  const password = document.getElementById('loginPassword').value;
+
+  if (email.trim() === '' || password.trim() === '') {
+    alert('Please enter email and password');
+    return;
+  }
+
+  // store login state (optional)
+  localStorage.setItem('userLoggedIn', 'true');
+
+  // close modal
+  loginModal.style.display = 'none';
+
+  // redirect to Home page
+  window.location.href = "/";
+
+});
