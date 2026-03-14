@@ -233,6 +233,5 @@ loginBtn.addEventListener('click', () => {
   loginModal.style.display = 'none';
 
   // redirect to Home page
-  window.location.href = "/";
-
+  window.location.href = '/';
 });

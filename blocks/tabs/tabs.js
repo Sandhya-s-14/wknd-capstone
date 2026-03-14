@@ -1,5 +1,5 @@
 export default function decorate(block) {
-   /* ONLY run this logic for tabs.one */
+  /* ONLY run this logic for tabs.one */
   if (block.classList.contains('one')) {
     const rows = [...block.children];
     const nav = document.createElement('ul');
